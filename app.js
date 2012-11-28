@@ -27,8 +27,8 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/', routes.yo);
-//app.get('/users', user.list);
+app.get('/', routes.index);
+//app.get('/users', user.index);
 
 // Set up the database first, then start the app
 dbManager.on("dbInitialized", function(){
