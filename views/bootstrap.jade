@@ -1,10 +1,12 @@
 script(src='/js/jquery-1.8.2.min.js') 
+script(src='/bootstrap/js/bootstrap.min.js')
 link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css') 
 link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
 
 
 style(type="text/css)
   body{
+    background: #F5F5F5;
     padding-top: 0px;
     padding-bottom: 0px;
   }
@@ -22,3 +24,28 @@ style(type="text/css)
       padding: 9px 0;
     }
   }
+
+  /* Custom container */
+  .container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  .container-narrow > hr {
+    margin: 30px 0;
+  }
+
+  /* Main marketing message and sign up button */
+  .jumbotron {
+    margin: 60px 0;
+    text-align: center;
+  }
+  .jumbotron h1 {
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  /* Supporting marketing content */
+  .marketing {
+    margin: 30px 0;
+  }
+

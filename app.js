@@ -2,9 +2,11 @@ var express = require('express')
   , routes = require('./routes')
   //, user = require('./routes/user')
   , http = require('http')
-  , path = require('path');
+  , path = require('path')
+  , DBManager = require('./lib/dbmanager');
 
 var app = express();
+var dbManager = new DBManager();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
@@ -28,6 +30,14 @@ app.configure('development', function(){
 app.get('/', routes.yo);
 //app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log("Express server listening on port " + app.get('port'));
+// Set up the database first, then start the app
+dbManager.on("dbInitialized", function(){
+  http.createServer(app).listen(app.get('port'), function(){
+    console.log("Express server listening on port " + app.get('port'));
+  });
 });
+
+// A successful connection to the database will initiate the web server
+// Otherwise the DBManager will issue an error.
+dbManager.connect();
+
