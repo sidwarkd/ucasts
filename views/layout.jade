@@ -7,6 +7,36 @@ html
     include bootstrap
     //if lt IE 8
       script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+    link(rel='stylesheet', href='/css/site.css')
+
     block customheader
+
   body
-    block content
+
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href="#") &micro;Casts
+          .nav-collapse.collapse
+
+            ul.nav
+              li.active
+                a(href="/") Home
+              li.active
+                a(href="/about") About
+              li.active
+                a(href="#") Contact
+
+    .container-narrow
+
+      block content
+
+      hr
+
+      block footer
+        p &copy; HardlySoftware 2012

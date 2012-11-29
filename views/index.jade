@@ -2,72 +2,53 @@ extends layout
 
 block content
 
-  .navbar.navbar-inverse.navbar-fixed-top
-    .navbar-inner
-      .container-fluid
-        a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.brand(href="#") &micro;Casts
-        .nav-collapse.collapse
+  .jumbotron
+    h1 
+      span.main-micro 
+        &micro;
+      | Casts
 
-          ul.nav
-            li.active
-              a(href="#") Home
-            li.active
-              a(href="#") About
-            li.active
-              a(href="#") Contact
+    p.lead Short, focused, chunks of embedded learning Awesomeness. Helping <strong>&micro;</strong> hack the Internet of Things from the ground up.
 
-  .container-narrow
-
-    .jumbotron
-      h1 &micro;Casts
-      p.lead Short, focused, chunks of embedded learning Awesomeness. Helping <em>&micro;</em> hack the Internet of Things from the ground up.
-
-      p
-        a.btn.btn-success.btn-large Watch Intro &nbsp;
-          i.icon-play-circle.icon-white
-
-      hr
-
-    .row-fluid.marketing
-      .span6
-        h2 Volts, Amps, Watts, Oh My!
-        img(src="http://placehold.it/304x171")
-        p Just the very basics here to help you get on your embedded electronics way.  Also to help prevent you from killing yourself.
-        p 
-          a.btn.btn-info(href='#') Watch &nbsp;
-            i.icon-play-circle.icon-white
-
-      .span6
-        h2 Resist My Capacitance
-        img(src="http://placehold.it/304x171")
-        p Get to know the basics about resistors and capacitors.  Just enough to make you dangerous.
-        p 
-          a.btn.btn-info(href='#') Watch &nbsp;
-            i.icon-play-circle.icon-white
-
-
-    .row-fluid.marketing
-      .span6
-        h2 Blinky Blink
-        img(src="http://placehold.it/304x171")
-        p What's an LED?  How to hook it up, blow it up, and blink it up.
-        p 
-          a.btn.btn-info(href='#') Watch &nbsp;
-            i.icon-play-circle.icon-white
-
-      .span6
-        h2 Micro Wha?
-        img(src="http://placehold.it/304x171")
-        p Start playing with microcontrollers and you'll never go back.
-        p 
-          a.btn.btn-info(href='#') Watch &nbsp;
-            i.icon-play-circle.icon-white
+    p
+      a.btn.btn-success.btn-large(href='/about') Watch Intro &nbsp;
+        i.icon-play-circle.icon-white
 
     hr
 
-    block footer
-      p &copy; HardlySoftware 2012
+  .row-fluid.marketing
+    .span6
+      h2 Volts, Amps, Watts, Oh My!
+      img(src="http://placehold.it/304x171")
+      p Just the very basics here to help you get on your embedded electronics way.  Also to help prevent you from killing yourself.
+      p 
+        a.btn.btn-info(href='#') Watch &nbsp;
+          i.icon-play-circle.icon-white
+
+    .span6
+      h2 Resist My Capacitance
+      img(src="http://placehold.it/304x171")
+      p Get to know the basics about resistors and capacitors.  Just enough to make you dangerous.
+      p 
+        a.btn.btn-info(href='#') Watch &nbsp;
+          i.icon-play-circle.icon-white
+
+
+  .row-fluid.marketing
+    .span6
+      h2 Blinky Blink
+      img(src="http://placehold.it/304x171")
+      p What's an LED?  How to hook it up, blow it up, and blink it up.
+      p 
+        a.btn.btn-info(href='#') Watch &nbsp;
+          i.icon-play-circle.icon-white
+
+    .span6
+      h2 Micro Wha?
+      img(src="http://placehold.it/304x171")
+      p Start playing with microcontrollers and you'll never go back.
+      p 
+        a.btn.btn-info(href='#') Watch &nbsp;
+          i.icon-play-circle.icon-white
+
+    
