@@ -21,16 +21,29 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand(href="#") &micro;Casts
+          a.brand(href="/") &micro;Casts
           .nav-collapse.collapse
 
             ul.nav
-              li.active
-                a(href="/") Home
-              li.active
-                a(href="/about") About
-              li.active
-                a(href="#") Contact
+              - if (title === 'Home')
+                li.active
+                  a(href="/") Home
+              - else
+                li
+                  a(href="/") Home
+              - if (title === 'About')
+                li.active
+                  a(href="/about") About
+              - else
+                li
+                  a(href="/about") About
+              - if (title === 'Connect')
+                li.active
+                  a(href="/connect") Connect
+              - else
+                li
+                  a(href="/connect") Connect
+
 
     .container-narrow
 

@@ -29,6 +29,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/about', routes.about);
+app.get('/connect', routes.connect);
 //app.get('/users', user.index);
 
 // Set up the database first, then start the app
