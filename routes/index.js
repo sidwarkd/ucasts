@@ -1,10 +1,18 @@
-
+var DBManager = require('../lib/dbmanager');
 /*
  * GET home page.
  */
 
 exports.index = function(req, res){
-  res.render('index', {title: 'Home' });
+  var episodes = DBManager.DB.collection("episodes");
+  episodes.find().toArray(function(err, allEpisodes){
+    if(err === null){
+      res.render('index', {title: 'Home', episodes: allEpisodes });
+    }
+    else
+      res.render('index', {title: 'Home', episodes: [] });
+  });
+
 };
 
 exports.about = function(req, res){

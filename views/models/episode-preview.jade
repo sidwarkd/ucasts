@@ -1,0 +1,17 @@
+.row-fluid.marketing
+  .span6
+    h2= episodes[i].title
+    img(src="http://placehold.it/304x171")
+    p= episodes[i].caption
+    p 
+      a.btn.btn-info(href='#') Watch &nbsp;
+        i.icon-play-circle.icon-white
+
+  - if((i + 1) < episodes.length)
+    .span6
+      h2= episodes[i + 1].title
+      img(src="http://placehold.it/304x171")
+      p= episodes[i + 1].caption
+      p 
+        a.btn.btn-info(href='#') Watch &nbsp;
+          i.icon-play-circle.icon-white

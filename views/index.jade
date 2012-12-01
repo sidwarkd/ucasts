@@ -16,39 +16,12 @@ block content
 
     hr
 
-  .row-fluid.marketing
-    .span6
-      h2 Volts, Amps, Watts, Oh My!
-      img(src="http://placehold.it/304x171")
-      p Just the very basics here to help you get on your embedded electronics way.  Also to help prevent you from killing yourself.
-      p 
-        a.btn.btn-info(href='#') Watch &nbsp;
-          i.icon-play-circle.icon-white
+  - if (episodes.length === 0)
+    .jumbotron
+      h2 Videos Coming Soon!
 
-    .span6
-      h2 Resist My Capacitance
-      img(src="http://placehold.it/304x171")
-      p Get to know the basics about resistors and capacitors.  Just enough to make you dangerous.
-      p 
-        a.btn.btn-info(href='#') Watch &nbsp;
-          i.icon-play-circle.icon-white
+  - for(i = 0; i < episodes.length; i += 2)
+    include ./models/episode-preview.jade
 
-
-  .row-fluid.marketing
-    .span6
-      h2 Blinky Blink
-      img(src="http://placehold.it/304x171")
-      p What's an LED?  How to hook it up, blow it up, and blink it up.
-      p 
-        a.btn.btn-info(href='#') Watch &nbsp;
-          i.icon-play-circle.icon-white
-
-    .span6
-      h2 Micro Wha?
-      img(src="http://placehold.it/304x171")
-      p Start playing with microcontrollers and you'll never go back.
-      p 
-        a.btn.btn-info(href='#') Watch &nbsp;
-          i.icon-play-circle.icon-white
-
+    
     
