@@ -1,0 +1,56 @@
+!!! 5
+html
+  head
+    title &micro;Casts | 
+      = title
+    include header
+    include bootstrap
+    //if lt IE 8
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+
+    link(href='http://fonts.googleapis.com/css?family=Droid+Sans', rel='stylesheet') type='text/css'>
+    link(rel='stylesheet', href='/css/site.css')
+
+    block customheader
+
+  body
+
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href="/") &micro;Casts
+          .nav-collapse.collapse
+
+            ul.nav
+              - if (title === 'Home')
+                li.active
+                  a(href="/") Home
+              - else
+                li
+                  a(href="/") Home
+              - if (title === 'About')
+                li.active
+                  a(href="/about") About
+              - else
+                li
+                  a(href="/about") About
+              - if (title === 'Connect')
+                li.active
+                  a(href="/connect") Connect
+              - else
+                li
+                  a(href="/connect") Connect
+
+
+    .container-fluid
+
+      block content
+
+      hr
+
+      block footer
+        p &copy; HardlySoftware 2012
