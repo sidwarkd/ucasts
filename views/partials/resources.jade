@@ -1,0 +1,11 @@
+.row-fluid.sidebar-header
+  .span12.metro-green
+    .metro-header
+      img(src='/img/metro-links.png')
+      h2 Resources
+.row-fluid.sidebar-content
+  .span12
+    ul
+      each resource in resources
+        li
+          a(href='#{resource.href}', target="_blank") #{resource.text}

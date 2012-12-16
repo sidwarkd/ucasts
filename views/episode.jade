@@ -19,33 +19,9 @@ block content
       p= caption
 
     .span4
-      .row-fluid.sidebar-header
-        .span12.metro-green
-          .metro-header
-            img(src='/img/metro-links.png')
-            h2 Resources
-      .row-fluid.sidebar-content
-        .span12
-          ul
-            li
-              a(href='http://science.howstuffworks.com/environmental/energy/question501.htm') HowStuffWorks
-            li
-              a(href='http://en.wikipedia.org/wiki/Electric_current') Current on Wikipedia
-            li
-              a(href='http://amasci.com/miscon/voltage.html') Voltage
+      - if (typeof(resources) !== 'undefined')
+        include ./partials/resources.jade
 
-      .row-fluid.sidebar-header
-        .span12.metro-blue
-          .metro-header
-            img(src='/img/metro-parts.png')
-            h2 Part List
-      .row-fluid.sidebar-content
-        .span12
-          ul
-            li Breadboard
-            li 10uF 50V Electrolytic Capacitor
-            li .1uF 50V Electrolytic Capacitor
-            li 1k&#2126; 1/4 Watt Resistor
-            li Hookup wire
-
-      a(href='#') Mouser Shopping List
+      - if (typeof(resources) !== 'undefined')
+        include ./partials/parts.jade
+        
