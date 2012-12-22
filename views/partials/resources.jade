@@ -5,7 +5,7 @@
       h2 Resources
 .row-fluid.sidebar-content
   .span12
-    ul
+    ul.resource-list
       each resource in resources
         li
           a(href='#{resource.href}', target="_blank") #{resource.text}

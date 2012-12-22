@@ -5,7 +5,10 @@ block content
   .row-fluid
     .span12
       .main-video-container
-        <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/3jFw87fdxvQ?rel=0" frameborder="0" allowfullscreen></iframe>
+        - if (typeof(video) !== 'undefined')
+          <iframe width="640" height="360" src="#{video}?rel=0" frameborder="0" allowfullscreen></iframe>
+        - else
+          h1 :-( Sorry, we couldn't find the video
 
   hr
 
@@ -15,8 +18,11 @@ block content
       span.episode-date Dec 09, 2012
       br
 
-      h3 Overview
+      h2 Overview
       p= caption
+
+      - if (typeof(notes) !== 'undefined')
+        != notes
 
     .span4
       - if (typeof(resources) !== 'undefined')
