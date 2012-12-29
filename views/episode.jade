@@ -1,5 +1,7 @@
 extends episode_layout
 
+
+
 block content
 
   .row-fluid
@@ -15,7 +17,21 @@ block content
   .row-fluid
     .span8.episode-body
       h1= title
-      span.episode-date Dec 09, 2012
+
+      -if (typeof(date) !== 'undefined')
+        - var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        - var month = months[date.getMonth()];
+        - var day = date.getDate();
+        - var year = date.getFullYear();
+        - var dateStamp = day + " " + month + " " + year;
+
+        span.episode-date= dateStamp
+        
+      -if (typeof(tags) !== 'undefined')
+        .tag-bar
+          each tag in tags
+            span.label.label-info #{tag}
+
       br
 
       h2 Overview
