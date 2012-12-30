@@ -6,8 +6,7 @@
 .row-fluid.sidebar-content
   .span12
     ul.part-list
-      li Breadboard
-      li 10uF 50V Electrolytic Capacitor
-      li .1uF 50V Electrolytic Capacitor
-      li 1K 1/4 Watt Resistor
-      li Hookup wire
+      each part in parts
+        li
+          span #{part.name}
+          span.pull-right x#{part.quantity}

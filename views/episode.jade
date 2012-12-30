@@ -46,5 +46,6 @@ block content
           include ./partials/resources.jade
 
       - if (typeof(parts) !== 'undefined')
-        include ./partials/parts.jade
+        -if (parts.length > 0)
+          include ./partials/parts.jade
         

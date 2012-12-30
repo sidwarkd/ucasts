@@ -83,6 +83,7 @@
 {
   list-style: none;
   line-height: 30px;
+  border-bottom: dotted 1px gray;
 }
 
 .part-list

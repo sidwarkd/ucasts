@@ -7,12 +7,12 @@
   "resources": [
   ],
   "parts": [
-    "Hookup Wire",
-    "Wire Stripper",
-    "Multimeter",
-    "Pliers",
-    "Utility Knife",
-    "Tweezers (optional)"
+    {"name" : "Hookup Wire", "quantity" : 1},
+    {"name" : "Wire Stripper", "quantity" : 1},
+    {"name" : "Multimeter", "quantity" : 1},
+    {"name" : "Pliers", "quantity" : 1},
+    {"name" : "Utility Knife", "quantity" : 1},
+    {"name" : "Tweezers", "quantity" : 1}
   ],
   "notes": "",
   "tags": [
