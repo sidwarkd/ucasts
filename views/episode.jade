@@ -10,7 +10,7 @@ block content
         - if (typeof(video) !== 'undefined')
           <iframe width="640" height="360" src="#{video}?rel=0" frameborder="0" allowfullscreen></iframe>
         - else
-          h1 :-( Sorry, we couldn't find the video
+          h1 :-( Sorry, we couldn't find the video link.  Somebody on our team has brought great shame to their name.
 
   hr
 
@@ -26,7 +26,7 @@ block content
         - var dateStamp = day + " " + month + " " + year;
 
         span.episode-date= dateStamp
-        
+
       -if (typeof(tags) !== 'undefined')
         .tag-bar
           each tag in tags
@@ -42,8 +42,9 @@ block content
 
     .span4
       - if (typeof(resources) !== 'undefined')
-        include ./partials/resources.jade
+        -if (resources.length > 0)
+          include ./partials/resources.jade
 
-      - if (typeof(resources) !== 'undefined')
+      - if (typeof(parts) !== 'undefined')
         include ./partials/parts.jade
         
