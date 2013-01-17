@@ -4,6 +4,7 @@ import sys
 import pymongo
 from pymongo import MongoClient
 import json
+import markdown
 
 numArgs = len(sys.argv)
 args = {}
@@ -30,7 +31,7 @@ for i, arg in enumerate(sys.argv):
     args[currentArg] = ""
     processingArg = True
 
-print args
+#print args
 connection = None
 db = None
 episodes = None
@@ -54,6 +55,12 @@ episodes = db.episodes
 json_data = open(args.get("episode"))
 episode = json.load(json_data)
 
+# Check to see if a markdown file exists and read it into the notes
+markdown_file = open(args.get("episode").replace(".json", ".md"))
+if(markdown_file != None):
+  markdown_text = markdown_file.read();
+  episode["notes"] = markdown.markdown(markdown_text, extensions=['extra']);
+
 # Make sure the episode doesn't already exist
 if(episode != None):
   db_Episode = episodes.find_one({"permalink": episode["permalink"]})
@@ -62,7 +69,13 @@ if(episode != None):
     episodes.insert(episode)
     numDocsUpdated = numDocsUpdated + 1;
   else:
-    print "This item already exists in the database"
+    response = raw_input("This item already exists in the database.  Overwrite? (y/n): ")
+    if (response.lower() == "y"):
+      print "updating"
+      episodes.remove(db_Episode)
+      episodes.insert(episode)
+      numDocsUpdated = numDocsUpdated + 1;
+
 
 print ""
 print ""

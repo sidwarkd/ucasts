@@ -5,6 +5,11 @@
   "video": "https://www.youtube-nocookie.com/embed/0Rf78dNHLmo",
   "caption": "Just what you need to get started.  Nothing more, nothing less.",
   "resources": [
+    {"href" : "http://www.mouser.com", "text" : "Mouser (parts/tool supplier)"},
+    {"href" : "http://www.digikey.com", "text" : "DigiKey (parts/tool supplier)"},
+    {"href" : "http://www.sparkfun.com", "text" : "Sparkfun Website"},
+    {"href" : "https://www.sparkfun.com/products/9141", "text" : "Sparkfun Multimeter"},
+    {"href" : "http://www.sparkfun.com/products/10602", "text" : "Great pair of tweezers"}
   ],
   "parts": [
     {"name" : "Hookup Wire", "quantity" : 1},
@@ -18,7 +23,6 @@
   "tags": [
     "beginner",
     "tools"
-
   ],
-  "published": true
+  "published": false
 }
