@@ -10,12 +10,13 @@ task :new_episode do
   title = ask('Title: ')
   permalink = ask('Permalink: ')
   caption = ask('Caption: ')
+  episode_num = ask('Episode Number: ')
 
   episode_json = "{\n  \"title\": \"#{title}\",\n  \"permalink\": \"#{permalink}\",\n  \"caption\": \"#{caption}\",\n  "
   episode_json << "\"image\": \"\",\n  \"video\": \"\",\n  "
-  episode_json << "\"resources\": [\n    {\n      \"href\": \"\",\n      \"text\": \"\"\n    }\n  ],\n  "
-  episode_json << "\"parts\": [\n    {\n      \"name\": \"\",\n      \"quantity\": 0\n    }\n  ],\n  "
-  episode_json << "\"notes\": \"\",\n  \"tags\": [\n  ],\n  \"published\": false\n}"
+  episode_json << "\"resources\": [\n    {\"href\": \"\", \"text\": \"\" }\n  ],\n  "
+  episode_json << "\"parts\": [\n    {\"name\": \"\", \"quantity\": 0 }\n  ],\n  "
+  episode_json << "\"notes\": \"\",\n  \"tags\": [],\n  \"episode_num\": #{episode_num},\n  \"published\": false\n}"
 
   path = "./episodes/#{permalink}.json"
   unless File.exist? path

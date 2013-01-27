@@ -1,0 +1,19 @@
+{
+  "title": "Units of Measurement",
+  "permalink": "units_of_measurement",
+  "caption": "Get to know your teras, gigas, micros, and nanos.",
+  "image": "",
+  "video": "https://www.youtube-nocookie.com/embed/I5cYgRnfFDA?rel=0",
+  "resources": [
+    { "href": "/img/prefix1.png", "text": "Prefix Chart A" },
+    { "href": "/img/prefix2.gif", "text": "Prefix Chart B" },
+    { "href": "/img/prefix3.jpg", "text": "Prefix Chart C" },
+    { "href": "/img/prefix4.jpg", "text": "Prefix Chart D" }
+  ],
+  "parts": [
+  ],
+  "notes": "",
+  "tags": [ "beginner", "units" ],
+  "episode_num": 2,
+  "published": false
+}

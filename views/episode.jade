@@ -16,7 +16,7 @@ block content
 
   .row-fluid
     .span8.episode-body
-      h1= title
+      h1 <span style="color:#999;">##{episode_num}</span> #{title}
 
       -if (typeof(date) !== 'undefined')
         - var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

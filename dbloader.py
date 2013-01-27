@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import sys
+import os
 import pymongo
 from pymongo import MongoClient
 import json
@@ -56,10 +57,11 @@ json_data = open(args.get("episode"))
 episode = json.load(json_data)
 
 # Check to see if a markdown file exists and read it into the notes
-markdown_file = open(args.get("episode").replace(".json", ".md"))
-if(markdown_file != None):
-  markdown_text = markdown_file.read();
-  episode["notes"] = markdown.markdown(markdown_text, extensions=['extra']);
+if(os.path.isfile(args.get("episode").replace(".json", ".md"))):
+  markdown_file = open(args.get("episode").replace(".json", ".md"))
+  if(markdown_file != None):
+    markdown_text = markdown_file.read();
+    episode["notes"] = markdown.markdown(markdown_text, extensions=['extra']);
 
 # Make sure the episode doesn't already exist
 if(episode != None):

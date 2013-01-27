@@ -1,0 +1,17 @@
+{
+  "title": "Multimeters (V)",
+  "permalink": "multimeters_voltage",
+  "caption": "Part 1 of 3 on using your meter.  How to measure voltage.",
+  "image": "",
+  "video": "",
+  "resources": [
+    {"href": "", "text": "" }
+  ],
+  "parts": [
+    {"name": "", "quantity": 0 }
+  ],
+  "notes": "",
+  "tags": ["beginner", "tools", "meters"],
+  "episode_num": 4,
+  "published": false
+}

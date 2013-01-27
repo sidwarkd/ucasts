@@ -1,6 +1,7 @@
 .row-fluid.marketing
   - if(episodes[i].published)
     .span6.thumbnail
+      .ep-num.pull-right ##{episodes[i].episode_num}
       h2.center-text
         a(href='/episodes/#{episodes[i].permalink}')= episodes[i].title
       - if(typeof(episodes[i].image) !== 'undefined')
@@ -16,6 +17,7 @@
     - if(episodes[i + 1].published)
 
       .span6.thumbnail
+        .ep-num.pull-right ##{episodes[i + 1].episode_num}
         h2.center-text
           a(href='/episodes/#{episodes[i + 1].permalink}')= episodes[i + 1].title
         - if(typeof(episodes[i + 1].image) !== 'undefined')
