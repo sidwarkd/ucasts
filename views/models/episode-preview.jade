@@ -1,31 +1,28 @@
 .row-fluid.marketing
-  - if(episodes[i].published)
-    .span6.thumbnail
-      .ep-num.pull-right ##{episodes[i].episode_num}
-      h2.center-text
-        a(href='/episodes/#{episodes[i].permalink}')= episodes[i].title
-      - if(typeof(episodes[i].image) !== 'undefined')
-          img(src="#{episodes[i].image}")
-      - else
-        img(src="http://placehold.it/1600x900&text=#{episodes[i].title}")
-      p.caption= episodes[i].caption
-      p.center-text 
-        a.btn.btn-info(href='/episodes/#{episodes[i].permalink}') Watch &nbsp;
-          i.icon-play-circle.icon-white
+  .span6.thumbnail
+    .ep-num.pull-left= episodes[i].episode_num
+    h2.center-text
+      a(href='/episodes/#{episodes[i].permalink}')= episodes[i].title
+    - if(typeof(episodes[i].image) !== 'undefined')
+        img(src="#{episodes[i].image}")
+    - else
+      img(src="http://placehold.it/1600x900&text=#{episodes[i].title}")
+    p.caption= episodes[i].caption
+    p.center-text 
+      a.btn.btn-info(href='/episodes/#{episodes[i].permalink}') Watch &nbsp;
+        i.icon-play-circle.icon-white
 
   - if((i + 1) < episodes.length)
-    - if(episodes[i + 1].published)
+    .span6.thumbnail
+      .ep-num.pull-left= episodes[i + 1].episode_num
+      h2.center-text
+        a(href='/episodes/#{episodes[i + 1].permalink}')= episodes[i + 1].title
+      - if(typeof(episodes[i + 1].image) !== 'undefined')
+        img(src="#{episodes[i + 1].image}")
+      - else
+        img(src="http://placehold.it/1600x900&text=#{episodes[i + 1].title}")
 
-      .span6.thumbnail
-        .ep-num.pull-right ##{episodes[i + 1].episode_num}
-        h2.center-text
-          a(href='/episodes/#{episodes[i + 1].permalink}')= episodes[i + 1].title
-        - if(typeof(episodes[i + 1].image) !== 'undefined')
-          img(src="#{episodes[i + 1].image}")
-        - else
-          img(src="http://placehold.it/1600x900&text=#{episodes[i + 1].title}")
-
-        p.caption= episodes[i + 1].caption
-        p.center-text
-          a.btn.btn-info(href='/episodes/#{episodes[i + 1].permalink}') Watch &nbsp;
-            i.icon-play-circle.icon-white
+      p.caption= episodes[i + 1].caption
+      p.center-text
+        a.btn.btn-info(href='/episodes/#{episodes[i + 1].permalink}') Watch &nbsp;
+          i.icon-play-circle.icon-white

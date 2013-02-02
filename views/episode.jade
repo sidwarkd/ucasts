@@ -8,7 +8,7 @@ block content
     .span12
       .main-video-container
         - if (typeof(video) !== 'undefined')
-          <iframe width="640" height="360" src="#{video}?rel=0" frameborder="0" allowfullscreen></iframe>
+          <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/#{video}?rel=0" frameborder="0" allowfullscreen></iframe>
         - else
           h1 :-( Sorry, we couldn't find the video link.  Somebody on our team has brought great shame to their name.
 
@@ -18,6 +18,13 @@ block content
     .span8.episode-body
       h1 <span style="color:#999;">##{episode_num}</span> #{title}
 
+      -if (typeof(tags) !== 'undefined')
+        .tag-bar
+          each tag in tags
+            span.label.label-info #{tag}
+
+      br
+
       -if (typeof(date) !== 'undefined')
         - var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         - var month = months[date.getMonth()];
@@ -25,12 +32,8 @@ block content
         - var year = date.getFullYear();
         - var dateStamp = day + " " + month + " " + year;
 
-        span.episode-date= dateStamp
-
-      -if (typeof(tags) !== 'undefined')
-        .tag-bar
-          each tag in tags
-            span.label.label-info #{tag}
+        span.episode-date Last Updated:&nbsp;
+          = dateStamp
 
       br
 

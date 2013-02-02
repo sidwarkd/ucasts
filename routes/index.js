@@ -5,7 +5,7 @@ var DBManager = require('../lib/dbmanager');
 
 exports.index = function(req, res){
   var episodes = DBManager.DB.collection("episodes");
-  episodes.find().toArray(function(err, allEpisodes){
+  episodes.find({published:true}, {}, {sort: {episode_num:-1}}).toArray(function(err, allEpisodes){
     if(err === null){
       res.render('index', {title: 'Home', episodes: allEpisodes });
     }

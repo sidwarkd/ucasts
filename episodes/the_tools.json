@@ -1,8 +1,8 @@
 {
   "title": "The Tools",
   "permalink": "the_tools",
-  "image": "https://dl.dropbox.com/u/47429871/images/tools.jpg",
-  "video": "https://www.youtube-nocookie.com/embed/0Rf78dNHLmo",
+  "image": "/img/tools.jpg",
+  "video": "RuQp8KKhbv8",
   "caption": "Just what you need to get started.  Nothing more, nothing less.",
   "resources": [
     {"href" : "http://www.mouser.com", "text" : "Mouser (parts/tool supplier)"},
