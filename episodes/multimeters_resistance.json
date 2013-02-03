@@ -1,0 +1,16 @@
+{
+  "title": "Multimeters (&#8486;)",
+  "permalink": "multimeters_resistance",
+  "caption": "Part 3 of 3 intro to your meter.  Measuring resistance and continuity test.",
+  "image": "/img/multimeter_resistance.jpg",
+  "video": "fq1EGfkxMVM",
+  "resources": [
+    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" }
+  ],
+  "parts": [
+  ],
+  "notes": "",
+  "tags": ["beginner", "tools", "meters", "resistance", "continuity"],
+  "episode_num": 6,
+  "published": true
+}

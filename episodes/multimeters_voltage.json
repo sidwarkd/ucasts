@@ -1,17 +1,16 @@
 {
   "title": "Multimeters (V)",
   "permalink": "multimeters_voltage",
-  "caption": "Part 1 of 3 on using your meter.  How to measure voltage.",
-  "image": "",
-  "video": "",
+  "caption": "Part 1 of 3 intro to your meter.  Measuring voltage.",
+  "image": "/img/multimeter_voltage.jpg",
+  "video": "vHcv3sWpzF0",
   "resources": [
-    {"href": "", "text": "" }
+    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" }
   ],
   "parts": [
-    {"name": "", "quantity": 0 }
   ],
   "notes": "",
-  "tags": ["beginner", "tools", "meters"],
+  "tags": ["beginner", "tools", "meters", "voltage"],
   "episode_num": 4,
   "published": false
 }

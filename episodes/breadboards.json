@@ -3,7 +3,7 @@
   "permalink": "breadboards",
   "caption": "Getting to know your best friend for solderless prototyping.",
   "image": "/img/breadboards.jpg",
-  "video": "http://www.google.com",
+  "video": "kKl-YHrLyYk",
   "resources": [
     { "href" : "http://www.electrojoystick.com/tutorial/?page_id=113", "text" : "Tutorial for Making Connections"}
   ],
@@ -12,5 +12,5 @@
   "notes": "",
   "tags": ["beginner", "breadboard"],
   "episode_num": 3,
-  "published": false
+  "published": true
 }

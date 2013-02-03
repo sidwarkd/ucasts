@@ -22,6 +22,13 @@
   line-height: 1.1;
 }
 
+.episode-preview-header
+{
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom:5px;
+}
+
 .ep-num
 {
   color:#999;
@@ -107,13 +114,24 @@
 
 .caption
 {
-  font-size: 16px;
-  line-height: 22px;
-  margin-right:5px;
+  font-size: 14px;
+  line-height: 18px;
+  margin:0px;
+  padding:0;
 }
 
 .tag-bar > .label
 {
   margin-right: 5px;
   /*cursor:pointer;*/
+}
+
+.thumbnail > img
+{
+  border: solid 1px #999;
+}
+
+.episode-thumbnail
+{
+  margin-top:10px;
 }

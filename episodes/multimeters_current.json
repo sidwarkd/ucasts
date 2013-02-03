@@ -1,0 +1,16 @@
+{
+  "title": "Multimeters (I)",
+  "permalink": "multimeters_current",
+  "caption": "Part 2 of 3 intro to your meter.  Measuring current.",
+  "image": "/img/multimeter_current.jpg",
+  "video": "K10gqhrzuEc",
+  "resources": [
+    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" }
+  ],
+  "parts": [
+  ],
+  "notes": "",
+  "tags": ["beginner", "tools", "meters", "current"],
+  "episode_num": 5,
+  "published": true
+}
