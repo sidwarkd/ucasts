@@ -1,31 +1,32 @@
 .row-fluid.marketing
-  .span4.thumbnail.episode-thumbnail
-    h2.center-text.episode-preview-header
-      a(href='/episodes/#{episodes[i].permalink}')= episodes[i].title
+  .span4.thumbnail.episode-thumbnail(ref="/episodes/#{episodes[i].permalink}")
     - if(typeof(episodes[i].image) !== 'undefined')
         img(src="#{episodes[i].image}")
     - else
       img(src="http://placehold.it/1600x900&text=#{episodes[i].title}")
-    p.caption= episodes[i].caption
+
+    span.episode-preview-num
+        ##{episodes[i].episode_num}
+    .caption= episodes[i].caption
 
   - if((i + 1) < episodes.length)
-    .span4.thumbnail.episode-thumbnail
-      h2.center-text.episode-preview-header
-        a(href='/episodes/#{episodes[i + 1].permalink}')= episodes[i + 1].title
+    .span4.thumbnail.episode-thumbnail(ref="/episodes/#{episodes[i + 1].permalink}")
       - if(typeof(episodes[i + 1].image) !== 'undefined')
         img(src="#{episodes[i + 1].image}")
       - else
         img(src="http://placehold.it/1600x900&text=#{episodes[i + 1].title}")
 
-      p.caption= episodes[i + 1].caption
+      span.episode-preview-num
+        ##{episodes[i + 1].episode_num}
+      .caption= episodes[i + 1].caption
 
   - if((i + 2) < episodes.length)
-    .span4.thumbnail.episode-thumbnail
-      h2.center-text.episode-preview-header
-        a(href='/episodes/#{episodes[i + 2].permalink}')= episodes[i + 2].title
+    .span4.thumbnail.episode-thumbnail(ref="/episodes/#{episodes[i + 2].permalink}")
       - if(typeof(episodes[i + 2].image) !== 'undefined')
         img(src="#{episodes[i + 2].image}")
       - else
         img(src="http://placehold.it/1600x900&text=#{episodes[i + 2].title}")
 
-      p.caption= episodes[i + 2].caption
+      span.episode-preview-num
+        ##{episodes[i + 2].episode_num}
+      .caption= episodes[i + 2].caption

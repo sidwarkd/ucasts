@@ -5,12 +5,14 @@
   "image": "/img/multimeter_current.jpg",
   "video": "K10gqhrzuEc",
   "resources": [
-    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" }
+    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" },
+    {"href": "http://en.wikipedia.org/wiki/Electric_current", "text": "Current on Wikipedia"}
   ],
   "parts": [
   ],
   "notes": "",
   "tags": ["beginner", "tools", "meters", "current"],
   "episode_num": 5,
+  "date":"2013-02-09",
   "published": true
 }

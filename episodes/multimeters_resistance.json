@@ -5,7 +5,8 @@
   "image": "/img/multimeter_resistance.jpg",
   "video": "fq1EGfkxMVM",
   "resources": [
-    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" }
+    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" },
+    {"href": "http://en.wikipedia.org/wiki/Resistance_(electricity)", "text": "Resistance on Wikipedia"}
   ],
   "parts": [
   ],

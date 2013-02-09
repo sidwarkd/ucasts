@@ -5,12 +5,15 @@
   "image": "/img/multimeter_voltage.jpg",
   "video": "vHcv3sWpzF0",
   "resources": [
-    {"href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial" }
+    { "href": "http://www.sparkfun.com/tutorials/202", "text": "Sparkfun Meter Tutorial"},
+    { "href": "http://en.wikipedia.org/wiki/Voltage", "text":"Voltage on Wikipedia"},
+    { "href": "http://hyperphysics.phy-astr.gsu.edu/hbase/electric/watcir.html", "text": "Voltage Analogy"},
+    { "href": "http://en.wikipedia.org/wiki/Lemon_battery", "text": "Lemon Battery"}
   ],
   "parts": [
   ],
   "notes": "",
   "tags": ["beginner", "tools", "meters", "voltage"],
   "episode_num": 4,
-  "published": false
+  "published": true
 }
