@@ -1,0 +1,17 @@
+{
+  "title": "Ohm's Law (Theory)",
+  "permalink": "ohms_law_theory",
+  "caption": "A super brief intro to the magic formulas of electronics",
+  "image": "/img/ohm_law_theory.jpg",
+  "video": "s0WrcMPk-ao",
+  "resources": [
+    {"href": "http://en.wikipedia.org/wiki/Ohm's_law", "text": "Boring Version" },
+    {"href": "https://itunes.apple.com/us/app/ohms-law/id389305829?mt=8", "text": "iPhone Ohm's Law Calc"},
+    {"href": "https://play.google.com/store/apps/details?id=org.coopersoft.ohms&hl=en", "text": "Android Ohm's Law Calc"}
+  ],
+  "parts": [],
+  "notes": "",
+  "tags": ["beginner", "ohm's law"],
+  "episode_num": 7,
+  "published": true
+}
