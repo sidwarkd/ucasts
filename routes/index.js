@@ -57,6 +57,10 @@ exports.connect = function(req, res){
   res.render('connect', {title: 'Connect' });
 };
 
+exports.reviews = function(req, res){
+  res.render('coming_soon', {title: 'Reviews' });
+};
+
 exports.rss = function(req, res){
   var episodes = DBManager.DB.collection("episodes");
   episodes.find({published:true}, {}, {sort: {episode_num:-1}, limit:20 }).toArray(function(err, allEpisodes){

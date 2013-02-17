@@ -32,6 +32,7 @@ app.get('/about', routes.about);
 app.get('/connect', routes.connect);
 app.get('/rss', routes.rss);
 app.get('/episodes/:permalink', episodes.show);
+app.get('/reviews', routes.reviews);
 //app.get('/users', user.index);
 
 // Set up the database first, then start the app
