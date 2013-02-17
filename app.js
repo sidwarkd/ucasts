@@ -30,6 +30,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/connect', routes.connect);
+app.get('/rss', routes.rss);
 app.get('/episodes/:permalink', episodes.show);
 //app.get('/users', user.index);
 
