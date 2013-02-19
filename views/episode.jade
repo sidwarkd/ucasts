@@ -12,6 +12,11 @@ block content
         - else
           h1 :-( Sorry, we couldn't find the video link.  Somebody on our team has brought great shame to their name.
 
+        p
+          a(href="//www.youtube.com/subscription_center?add_user_id=OzT8ij63FzF3eDmcbY2gkw&feature=creators_cornier-//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_130x36_red.png")
+            img(src="//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_130x36_red.png", alt="Subscribe to me on YouTube")
+          img(src="//www.youtube-nocookie.com/gen_204?feature=creators_cornier-//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_130x36_red.png", style="display: none")
+
   hr
 
   .row-fluid
@@ -37,61 +42,7 @@ block content
 
       br
 
-      //- Twitter Integration
-      a(href="https://twitter.com/share", class="twitter-share-button", data-lang="en", data-dnt="true", data-text="Check out uCast ##{episode_num}", data-url="http://www.hardlysoftware.com/episodes/#{permalink}", data-counturl="url="http://www.hardlysoftware.com/episodes/#{permalink}", data-related="sidwarkd", data-count="horizontal") Tweet
-      script
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-
-
-
-      //- Google Plus 1 Integration
-      g:plusone(href="http://www.hardlysoftware.com/episodes/#{permalink}", size="medium", annotation="bubble", recommendations="false")
-      script
-        (function() {
-          var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-          po.src = 'https://apis.google.com/js/plusone.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-        })();
-
-      //- Pinterest Integration
-      a(data-pin-config="beside", href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hardlysoftware.com%2Fepisodes%2F#{permalink}&media=http%3A%2F%2Fwww.hardlysoftware.com#{image}&description=#{caption}", data-pin-do="buttonPin")
-        img(src="//assets.pinterest.com/images/pidgets/pin_it_button.png")
-
-      script
-        (function (w, d, load) {
-         var script, 
-         first = d.getElementsByTagName('SCRIPT')[0],  
-         n = load.length, 
-         i = 0,
-         go = function () {
-           for (i = 0; i < n; i = i + 1) {
-             script = d.createElement('SCRIPT');
-             script.type = 'text/javascript';
-             script.async = true;
-             script.src = load[i];
-             first.parentNode.insertBefore(script, first);
-           }
-         }
-         if (w.attachEvent) {
-           w.attachEvent('onload', go);
-         } else {
-           w.addEventListener('load', go, false);
-         }
-        }(window, document, 
-         ['//assets.pinterest.com/js/pinit.js']
-        ));    
-
-      //- Facebook Integration
-      #fb-root
-      script
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      .fb-like(data-href="http://www.hardlysoftware.com/episodes/#{permalink}", data-send="false", data-layout="button_count", data-width="450", data-show-faces="false")
+      include ./partials/social-bar.jade
 
       h2 Overview
       p= caption
