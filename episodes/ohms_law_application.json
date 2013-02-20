@@ -1,0 +1,18 @@
+{
+  "title": "Ohm's Law (Application)",
+  "permalink": "ohms_law_application",
+  "caption": "Let's see what this Ohm guy is made of.",
+  "image": "/img/ohm_law_application.jpg",
+  "video": "WnZDPo-tjwo",
+  "resources": [
+    {"href": "http://en.wikipedia.org/wiki/Ohm's_law", "text": "Boring Version" },
+    {"href": "https://itunes.apple.com/us/app/ohms-law/id389305829?mt=8", "text": "iPhone Ohm's Law Calc"},
+    {"href": "https://play.google.com/store/apps/details?id=org.coopersoft.ohms&hl=en", "text": "Android Ohm's Law Calc"}
+  ],
+  "parts": [
+  ],
+  "notes": "",
+  "tags": ["beginner", "ohm's law"],
+  "episode_num": 8,
+  "published": true
+}

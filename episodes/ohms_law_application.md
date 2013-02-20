@@ -1,0 +1,5 @@
+##Tongue and Skin Resistance
+Measuring the resistance of your tongue and skin is not an exact science.  The particular multimeter I'm using takes several seconds to zero in on large resistance values and especially on your tongue the resistance changes pretty rapidly as it begins to dry out.  I recommend you try it yourself to see how the resistance begins to rise as your tongue starts to dry.  The same goes for your skin.  I've never measured the same resistance on my skin twice.  Lots of things come in to play on dynamic surfaces like that.  The point I was trying to make is that more current will flow across your tongue surface than your skin surface.  It's a very low amount in either case.
+
+### Correction
+At 8:14 I said "Not a lot of resistance is going through there (your skin)."  I meant to say not a lot of current because of the higher resistance of your skin.
