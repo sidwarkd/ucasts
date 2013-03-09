@@ -1,0 +1,18 @@
+{
+  "title": "Resistors - Intro",
+  "permalink": "resistors_intro",
+  "caption": "Learn what all of the pretty colored stripes are for. Hint: Not for decoration.",
+  "image": "/img/resistors_intro.jpg",
+  "video": "K8wZRQR9uJk",
+  "resources": [
+    {"href": "/img/resistor-color-code-all.gif", "text": "Color Code Chart" },
+    {"href": "http://www.learningaboutelectronics.com/Articles/What-is-the-power-rating-of-a-resistor", "text": "Resistor Power Rating" },
+    {"href": "http://www.electronics-tutorials.ws/resistor/res_7.html", "text": "More On Power Rating" }
+  ],
+  "parts": [
+  ],
+  "notes": "",
+  "tags": ["beginner", "resistance", "resistors"],
+  "episode_num": 9,
+  "published": true
+}
