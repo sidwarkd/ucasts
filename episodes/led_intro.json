@@ -1,0 +1,17 @@
+{
+  "title": "Blinky Blink",
+  "permalink": "led_intro",
+  "caption": "What's with the blinky blink.  Intro to LEDs.",
+  "image": "/img/led_intro.jpg",
+  "video": "FSRDDshxqWU",
+  "resources": [
+    {"href": "http://www.kpsec.freeuk.com/components/led.htm", "text": "Great LED Reference" },
+    {"href": "http://www.asdn.net/asdn/physics/leds.shtml", "text": "The Physics" }
+  ],
+  "parts": [
+  ],
+  "notes": "",
+  "tags": ["beginner", "led"],
+  "episode_num": 11,
+  "published": true
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Capacitors - Intro",
+  "permalink": "capacitors_intro",
+  "caption": "Just the very basics.  What they are and what we'll use them for.",
+  "image": "/img/capacitor_intro.jpg",
+  "video": "pW7K6clDfEQ",
+  "resources": [
+    {"href": "http://en.wikipedia.org/wiki/Capacitor", "text": "Capicitor - Wikipedia" },
+    {"href": "http://en.wikipedia.org/wiki/Types_of_capacitor#Types_and_styles", "text": "Types of Capacitors" },
+    {"href": "http://www.youtube.com/watch?v=xlvqUts9H9c", "text": "EEVblog Capacitors" }
+  ],
+  "parts": [],
+  "notes": "",
+  "tags": ["beginner", "capacitance", "capacitors"],
+  "episode_num": 10,
+  "published": true
+}
