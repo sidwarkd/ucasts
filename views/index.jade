@@ -8,22 +8,47 @@ block content
         &micro;
       | Casts
 
-    p.lead Short, focused chunks of embedded learning awesomeness. Helping <strong>&micro;</strong> hack DIY electronics from the ground up.
+    p.lead Short, focused chunks of embedded learning awesomeness. Helping <strong>&micro;</strong> hack DIY electronics.
 
     p
-      a.btn.btn-success.btn-large(href='/about') Watch Intro &nbsp;
-        i.icon-play-circle.icon-white
-
-    p
-      a(href="//www.youtube.com/subscription_center?add_user_id=OzT8ij63FzF3eDmcbY2gkw&feature=creators_cornier-//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_130x36_red.png")
-        img(src="//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_130x36_red.png", alt="Subscribe to me on YouTube")
-      img(src="//www.youtube-nocookie.com/gen_204?feature=creators_cornier-//s.ytimg.com/yt/img/creators_corner/Subscribe_to_my_videos/YT_Subscribe_130x36_red.png", style="display: none")
+      a.btn.btn-success.btn-large(href='/library') Explore the Library &nbsp;
+        i.icon-desktop.icon-white
 
     hr
 
-  - if (episodes.length === 0)
-    .jumbotron
-      h2 Videos Coming Soon!
+  .row-fluid
+    .span4
+      h2 
+        i.icon-time 
+        | Save Time
 
-  - for(i = 0; i < episodes.length; i += 3)
-    include ./models/episode-preview.jade
+      p Don't spend hours or even days crawling through the learning curve.  Get the relevant information you need right now to keep your project moving forward.  Avoid common pitfalls and learn valuable shortcuts.
+    
+    .span4
+      h2 
+        i.icon-trophy 
+        | Guaranteed
+
+      p Each paid series comes with a money back guarantee.  If you don't feel the series delivered on its promised content just let us know and we'll provide a hassle-free refund. We believe in getting what you pay for.
+
+    .span4
+      h2 
+        i.icon-check 
+        | Always Practical
+
+      p We won't waste your time with long rants or opinions.  All paid series contain practical examples and code (when applicable) that you can immediately apply to your projects. We aim to be light on theory.
+   
+    
+
+  .jumbotron
+    h2 Newest Episodes and Series
+
+    - if (episodes.length === 0)
+      .jumbotron
+        h2 Videos Coming Soon!
+
+    - for(i = 0; i < episodes.length; i += 3)
+      include ./models/episode-preview.jade
+
+
+

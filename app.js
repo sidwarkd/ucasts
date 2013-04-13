@@ -27,9 +27,18 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+app.get('*', function(req,res,next){
+  if(req.headers['x-forwarded-proto']!='https')
+    if(process.env.NODE_ENV == 'production')
+      res.redirect('https://www.hardlysoftware.com' + req.url)
+    else
+      next();
+  else
+    next();
+});
 app.get('/', routes.index);
-app.get('/about', routes.about);
-app.get('/connect', routes.connect);
+app.get('/faq', routes.faq);
+app.get('/contact', routes.contact);
 app.get('/rss', routes.rss);
 app.get('/episodes/:permalink', episodes.show);
 app.get('/reviews', routes.reviews);

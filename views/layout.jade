@@ -15,39 +15,41 @@ html
     block customheader
 
   body
-
-    .navbar.navbar-inverse.navbar-fixed-top
-      .navbar-inner
-        .container-fluid
-          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.brand(href="/") &micro;Casts
-          .nav-collapse.collapse
-
-            ul.nav
-              - if (title === 'Home')
-                li.active
-                  a(href="/") Home
-              - else
-                li
-                  a(href="/") Home
-              - if (title === 'About')
-                li.active
-                  a(href="/about") About
-              - else
-                li
-                  a(href="/about") About
-              - if (title === 'Connect')
-                li.active
-                  a(href="/connect") Connect
-              - else
-                li
-                  a(href="/connect") Connect
-
-    .container-narrow
-
+    .container
+      .masthead
+        .muted
+          a(href="/")
+            img(src="/img/uCasts.png")
+        .navbar
+          .navbar-inner
+            .container
+              ul.nav
+                - if (title === 'Home')
+                  li.active
+                    a(href="/") Home
+                - else
+                  li
+                    a(href="/") Home
+                - if (title === 'Library')
+                  li.active
+                    a(href="/library") Library
+                - else
+                  li
+                    a(href="/library") Library
+                - if (title === 'Reviews')
+                  li.active
+                    a(href="/reviews") Reviews
+                - else
+                  li
+                    a(href="/reviews") Reviews
+                - if (title === 'FAQ')
+                  li.active
+                    a(href="/faq") FAQ
+                - else
+                  li
+                    a(href="/faq") FAQ
+                
+      
       block content
 
       hr

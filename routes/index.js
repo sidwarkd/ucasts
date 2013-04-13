@@ -49,12 +49,12 @@ exports.index = function(req, res){
 
 };
 
-exports.about = function(req, res){
-  res.render('about', {title: 'About' });
+exports.faq = function(req, res){
+  res.render('faq', {title: 'FAQ' });
 };
 
-exports.connect = function(req, res){
-  res.render('connect', {title: 'Connect' });
+exports.contact = function(req, res){
+  res.render('contact', {title: 'Contact' });
 };
 
 exports.reviews = function(req, res){
