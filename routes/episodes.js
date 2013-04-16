@@ -12,3 +12,14 @@ exports.show = function(req, res){
   });
 
 };
+
+exports.index = function(req, res){
+  var episodes = DBManager.DB.collection("episodes");
+  episodes.find({published:true}, {}, {sort: {episode_num:-1}}).toArray(function(err, allEpisodes){
+    if(err === null){
+      res.render('library', {title: 'Library', episodes: allEpisodes });
+    }
+    else
+      res.render('library', {title: 'Library', episodes: [] });
+  });
+};

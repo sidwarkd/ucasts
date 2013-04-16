@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  - if (episodes.length === 0)
+    .jumbotron
+      h2 Videos Coming Soon!
+
+  - for(i = 0; i < episodes.length; i += 3)
+    include ./models/episode-preview.jade
