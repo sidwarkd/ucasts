@@ -1,0 +1,10 @@
+extends ../layout
+
+block customheader
+  script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js")
+  script(src="https://checkout.stripe.com/v2/checkout.js")
+  script(src="/js/soda.js")
+
+block content
+  h1 Oops! We ran into a problem.
+  p.lead #{message}

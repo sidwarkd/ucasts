@@ -1,6 +1,8 @@
 var express = require('express')
   , routes = require('./routes')
   , episodes = require('./routes/episodes')
+  , soda = require('./routes/soda')
+  , api = require('./routes/api')
   //, user = require('./routes/user')
   , http = require('http')
   , path = require('path')
@@ -43,6 +45,9 @@ app.get('/rss', routes.rss);
 app.get('/episodes/:permalink', episodes.show);
 app.get('/reviews', routes.reviews);
 app.get('/library', episodes.index);
+app.get('/soda', soda.index);
+app.get('/free', api.free);
+app.post('/charge', soda.charge);
 //app.get('/users', user.index);
 
 // Set up the database first, then start the app

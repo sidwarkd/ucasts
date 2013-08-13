@@ -1,0 +1,41 @@
+extends ../layout
+
+block customheader
+  script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js")
+  script(src="https://checkout.stripe.com/v2/checkout.js")
+  script(src="/js/soda.js")
+
+block content
+  h1 Mo Bettah Soda
+  p.lead The minimum purchase amount is $1.00.
+  .row(ng-app="sodaApp")
+    .span7(ng-controller="SodaCtrl")
+      
+      ul.thumbnails
+        li.span2.thumbnail(ng-repeat="soda in sodaList")
+          img(src="{{soda.image}}")
+          br
+          strong {{soda.cost | currency}}
+          button.btn.btn-info.btn-small.pull-right(ng-click="addToCart(soda)")
+            i.icon-plus
+
+    .span3(ng-controller="CartCtrl")
+      h2 Your Cart 
+        i.icon-shopping-cart.pull-right
+      table
+        tr(ng-repeat="item in items | orderBy:'name'")
+          td.soda-name {{item.name}} 
+          td.soda-cost x{{item.count}}
+          td 
+            i.icon-minus-sign.pointer(ng-click="removeOneFromCart(item)")
+
+      h3(class="pull-right {{totalClass}}")
+        {{total() | currency}}
+
+
+      div(class="payment-area {{readyToPay()}}")
+        form(action="/charge", method="POST")
+          label(for="email") Email receipt to:
+          input(type="text", name="email")
+          button#pay-now(class="btn btn-primary", ng-click="ClickedPayNow($event)") Pay Now
+        

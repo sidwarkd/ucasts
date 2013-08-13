@@ -253,3 +253,19 @@ background-color: #222;
 {
   border-bottom: solid 1px #3366CC;
 }
+
+.pointer{
+  cursor:pointer;
+}
+
+.soda-name{
+  width:80px;
+}
+
+.soda-cost{
+  width:30px;
+}
+
+.payment-area{
+  margin-top: 80px;
+}
